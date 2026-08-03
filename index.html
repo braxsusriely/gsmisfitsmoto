@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Granite State Misfits LLC Official</title>
+  <style>
+    html { color-scheme: light dark; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #000;
+      font-family: Tahoma, Verdana, Arial, sans-serif;
+
+      /* don’t vertically center the whole layout on desktop */
+      display: flex;
+      justify-content: center;
+
+      padding: 16px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .stage {
+      position: relative;
+      width: 100%;
+      max-width: 1100px;
+
+      /* allow it to expand naturally */
+      display: block;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+
+    /* Put the card at the top (not vertically centered) so its top text can’t get clipped */
+    .card {
+      position: absolute;
+      left: 50%;
+      top: 14px;
+      transform: translateX(-50%);
+
+      width: min(720px, 92vw);
+
+      background: rgba(0, 0, 0, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+
+      padding: 18px 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+
+      color: #f2f2f2;
+      line-height: 1.35;
+      font-size: 15px;
+
+      z-index: 1;
+      overflow: visible;
+    }
+
+    .card h1 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      letter-spacing: 0.2px;
+    }
+
+    .card p { margin: 0 0 12px 0; }
+    .card .small { font-size: 13px; color: #d9d9d9; }
+
+    .calendar-embed {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 120%;
+      overflow: hidden;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 14px;
+    }
+    .calendar-embed iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        justify-content: flex-start;
+        padding: 12px;
+      }
+
+      .card {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+
+        width: 100%;
+        max-width: 720px;
+        margin-top: 12px;
+
+        padding: 16px 14px;
+        font-size: 14.5px;
+      }
+
+      img {
+        max-height: 35vh;
+        object-fit: cover;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <img src="/resources/Yedw0-Up.jpeg" alt="Yedw0 Up">
+
+    <div class="card">
+      <h1>Granite State Misfits</h1>
+
+      <p>Granite State Misfits is a casual, no-drama motorcycle riding group for riders across New Hampshire. It&rsquo;s</p>
+      <p>&mdash; a tight-knit crew of passionate riders based in New Hampshire. We live for the throttle, the twisties of the White Mountains, and the freedom of two wheels. Whether you&rsquo;re a seasoned rider or just starting out, if you ride hard, respect the road, and value real brotherhood (and sisterhood), you&rsquo;re one of us. No pretenders, no posers &mdash; just misfits who ride for the love of it. While supporting our local communities and fellow riders.</p>
+
+      <p>Granite State Misfits is a casual, no-drama motorcycle riding group for riders across New Hampshire. It&rsquo;s not a formal club, MC, RC, business, or organization &mdash; just a loose crew of riders who want to organize rides, find riding buddies, and enjoy the roads without rules, dues, politics, or structure.</p>
+
+      <p>
+        By joining, and/or posting You hereby release, waive, discharge, and covenant not to sue the Page owners, hosts, affiliates, or any other users of this Page from any and all liability, claims, demands, actions, or causes of action arising out of or related to your joining the Page, posting events, attending events, or any other interaction with content on this Page. This includes claims for negligence, injury, death, property damage, or any other damages, whether known or unknown, foreseen or unforeseen.
+      </p>
+
+      <p style="margin-top:14px;">
+        <a href="https://www.facebook.com/share/g/19aJfkBFG3/" target="_blank" rel="noopener noreferrer">
+          Join us on Facebook
+        </a>
+      </p>
+
+      <div class="calendar-embed">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=c_a5c2d5f1d034ca443717043dc4c63804b0c357b5874fb1c1c0526c18f0c34f45%40group.calendar.google.com&ctz=America%2FNew_York"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
